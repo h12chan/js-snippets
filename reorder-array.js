@@ -15,3 +15,5 @@ function reorderArray(arr, from, to) {
 		throw new Error('There is no item in the array at index ' + from);
 	}
 }
+
+export default reorderArray;
