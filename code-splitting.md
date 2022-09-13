@@ -1,0 +1,6 @@
+- https://www.youtube.com/watch?v=kwUfeWe7DCw
+- https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting
+- https://blog.logrocket.com/code-splitting-in-react-an-overview/
+- https://reactjs.org/docs/code-splitting.html
+- https://laurieontech.com/posts/code-splitting/
+- https://www.freecodecamp.org/news/async-await-in-javascript/
