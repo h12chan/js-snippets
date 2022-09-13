@@ -1,0 +1,16 @@
+// map ../PATHS to @KEYWORD-OF-YOUR-CHOICE
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@lib/*": ["lib/*"],
+    }
+  }
+}
+
+/* in the file with imports, you can now simply:
+import styles from '@styles/Admin.module';
+what other neat tricks can jsconfig do?
+*/
