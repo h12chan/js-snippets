@@ -8,4 +8,5 @@ test('returns the number plus eight', () => {
 // npm --version
 // npm init -y
 // npm install --save-dev jest
+// amend package.json file content key:value pair to "test": "jest"
 // npm run test
