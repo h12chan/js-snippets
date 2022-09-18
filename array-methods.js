@@ -12,7 +12,8 @@ let train = [
   { 'colour': 'black',
    'type': 'cargo'},
   { 'colour': 'blue',
-   'type': 'engine'}
+   'type': 'engine'},
+  [ 'conductor', 'engineer' ]
   ]
 
 train.push({colour:'gold',type:'passenger'});
@@ -41,5 +42,50 @@ console.log(Array.isArray(train));
 
 console.log("length - determine the size of an array:");
 console.log(train.length);
+
+console.log("array destructuring - extract multiple properties from an array and assign them to variables:");
+let [first, second, third] = train
+console.log(first, second, third);
+
+/*
+train = [
+  { 'colour': 'green',
+   'type': 'passenger'}
+  ]
+*/
+console.log("array destructuring - assign a default value using destructuring when there is no value or undefined for the array element:");
+[first, second = 'no train compartment'] = train;
+console.log(first, second);
+
+console.log("array destructuring - you can skip an array element to map to a variable:");
+[first, , , , ,sixth] = train;
+console.log(first, sixth);
+
+console.log("array destructuring - nested array destructuring:");
+let conductor = train[6][0];
+console.log(conductor);
+
+console.log("spread operator - clone an array:");
+const trainCloned = [...train];
+console.log(trainCloned);
+train === trainCloned; // false
+
+console.log("rest operator - map out residual elements in a new array:");
+const [first, second, ...trainResidual] = train;
+console.log(first);
+console.log(second);
+console.log(trainResidual);
+
+console.log("array destructuring - swap the values of two variables:");
+let first = "smile";
+let second = "frown";
+[first, second] = [second, first];
+console.log(first, second);
+
+console.log("array destructuring - merge two arrays:");
+let trainCloned = [1,2,3,4,5,6];
+const combined = [...train, ...trainCloned];
+console.log(combined);
+
 
 // to be continued
