@@ -87,5 +87,29 @@ let trainCloned = [1,2,3,4,5,6];
 const combined = [...train, ...trainCloned];
 console.log(combined);
 
+const first = ['a','b','c']
+const second = ['d','e','f']
+const merged = first.concat(second);
+console.log(merged);
+console.log(first);
+console.log(second);
+
+const joined1 = first.join();
+console.log(joined1);
+const joined2 = first.join('<->');
+console.log(joined2);
+
+const colors = ['red', 'blue', 'green'];
+colors.fill('pink');
+console.log(colors); // ["pink", "pink", "pink"]
+const colors = ['red', 'blue', 'green'];
+colors.fill('pink', 1,3); // ["red", "pink", "pink"]
+
+const colors = ['red', 'blue', 'green'];
+colors.includes('blue'); // returns true
+
+const colors = ['red', 'blue', 'blue', 'green'];
+colors.indexOf('blue'); // returns 1
+colors.lastIndexOf('blue'); // returns 2
 
 // to be continued
