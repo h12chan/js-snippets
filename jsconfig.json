@@ -9,7 +9,7 @@
     }
   }
 }
-
+// https://www.youtube.com/shorts/WpgZKBtW_t8
 /* in the file with imports, you can now simply:
 import styles from '@styles/Admin.module';
 what other neat tricks can jsconfig do?
