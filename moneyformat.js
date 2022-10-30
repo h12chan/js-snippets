@@ -12,6 +12,7 @@ console.log(format(200.99));
 console.log(format(777));
 console.log(format(0.01));
 console.log(format(42069));
+console.log(format(329.3098));
 
 // https://www.youtube.com/shorts/J1szHIME1ok
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl
